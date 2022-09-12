@@ -61,6 +61,11 @@ namespace EnglishSefirah
         /// <returns>The English sefirah count of the day.</returns>
         public static string GetEnglishSefira(int day)
         {
+            if (day is < 1 or > 49)
+            {
+                throw new ArgumentOutOfRangeException(nameof(day), "Day must be between 1 and 49 (inclusive).");
+            }
+
             const string sentenceEnd = " of the Omer.";
             var sentenceStart = "Today is " + StringifyDay(day);
 
