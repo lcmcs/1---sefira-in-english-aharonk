@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace TestProject1
 {
     [TestClass]
-    public class UnitTest1
+    public class SefirahTest
     {
         [TestMethod]
         public void TestWeekCalc()

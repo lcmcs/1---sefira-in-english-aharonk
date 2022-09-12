@@ -57,7 +57,7 @@ namespace EnglishSefirah
         /// <summary>
         /// Compiles the sefirah count of a given day.
         /// </summary>
-        /// <param name="day">The day number.</param>
+        /// <param name="day">The day number.</param> 
         /// <returns>The English sefirah count of the day.</returns>
         public static string GetEnglishSefira(int day)
         {
