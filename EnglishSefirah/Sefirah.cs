@@ -31,7 +31,7 @@ namespace EnglishSefirah
         /// <returns>The string version of the given number.</returns>
         private static string StringifyDay(int day)
         {
-            return day.ToWords() + " day" + (day == 1 ? "" : 's');
+            return $"{day.ToWords()} day{(day == 1 ? "" : 's')}";
         }
 
         /// <summary>
@@ -41,7 +41,7 @@ namespace EnglishSefirah
         /// <returns>The string version of the given number.</returns>
         private static string StringifyWeek(int week)
         {
-            return week.ToWords() + " week" + (week == 1 ? "" : 's');
+            return $"{week.ToWords()} week{(week == 1 ? "" : 's')}";
         }
 
         /// <summary>
